@@ -14,4 +14,3 @@ if return_value.include?(false)
 else
   true
 end
-

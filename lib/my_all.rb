@@ -8,3 +8,10 @@ def my_all?(collection)
     x = x + 1
   end
 end
+
+if return_value.include?(false)
+  false
+else
+  true
+  end
+end

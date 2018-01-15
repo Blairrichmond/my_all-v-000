@@ -2,15 +2,16 @@ require 'pry'
 
 def my_all?(collection)
   x = 0
-  return_value = []
+  block_return_values = []
   while x < collection.length
-    return_value.push(yield(collection[x]))
+    block_return_values.push(yield(collection[x]))
     x = x + 1
   end
 end
 
-if return_value.include?(false)
+if block_return_values.include?(false)
   false
 else
   true
 end
+
